@@ -1,0 +1,128 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .todo-container {
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #cancela-edit-btn {
+    background-color: #ddd;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .serch,
+  #filter {
+    flex: 1;
+  }
+  
+  .serch form,
+  #filter select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #erase-button {
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #filter-select {
+    appearance: none;
+    border: none;
+    outline: none;
+  }
+  
+  /* Todo Item */
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .todo.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  h3 {
+    flex: 1;
+    margin: 0;
+  }
+  
+  button.finish-todo,
+  button.edit-todo,
+  button.remove-todo {
+    border: none;
+    background-color: transparent;
+    color: #333;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .fa-check,
+  .fa-pen,
+  .fa-xmark {
+    font-size: 18px;
+  }
+  
